@@ -1,0 +1,77 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(170, 111, 56);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.list-box {
+    position: relative;
+    height: 936px;
+    width: 100%;
+}
+
+.logo > h1 {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+.list {
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 800px;
+    width: 500px;
+    overflow: auto;
+}
+
+.list > li {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+span > i {
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+#submit-box {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    padding: 8px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+#submit-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 60%;
+    padding: 4px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}

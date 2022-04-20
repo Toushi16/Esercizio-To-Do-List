@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Tobolist</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div id="app">
+            <div class="list-box">
+                <div class="logo">
+                    <h1>Todolist</h1>
+                </div>
+                <div class="list">
+                    <li v-for="(element,index) in todoList">
+                        {{ element }}
+                        <span>
+                            <i @click="deleteTodo(index)" class="fa-solid fa-rectangle-xmark"></i>
+                        </span>
+                    </li>
+                    <input type="text" @keyup.enter="addTodo" v-model="newTodo" id="submit-box">
+                    <button @click="addTodo" id="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
